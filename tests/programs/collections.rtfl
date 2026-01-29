@@ -1,0 +1,8 @@
+def arr = array(1, 2, 3)
+println(array_length(arr))
+array_add(arr, 4)
+println(array_get(arr, 3))
+
+def mp = map()
+map_put(mp, "key", "value")
+println(map_get(mp, "key"))

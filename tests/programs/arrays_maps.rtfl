@@ -1,0 +1,11 @@
+def arr = array(1, 2, 3)
+arr[1] = 9
+println(arr[1])
+println(array_length(arr))
+
+def mp = map()
+mp->foo = "bar"
+println(mp->foo)
+
+map_put(mp, "baz", "qux")
+println(map_get(mp, "baz"))

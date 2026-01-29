@@ -1,0 +1,3 @@
+def greeting = "hello"
+println(greeting)
+println(add(2, 3))

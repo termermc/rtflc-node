@@ -1,0 +1,6 @@
+error err {
+  throw("boom")
+}
+if ![err = "ok"] {
+  println(err)
+}

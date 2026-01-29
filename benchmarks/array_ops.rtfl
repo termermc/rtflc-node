@@ -1,0 +1,21 @@
+// Fill an array, then sum elements via index access.
+
+def n = 50000
+
+def arr = array()
+
+def i = 0
+while [i < n] {
+  array_add(arr, i)
+  i = add(i, 1)
+}
+
+def sum = 0
+
+def j = 0
+while [j < array_length(arr)] {
+  sum = add(sum, arr[j])
+  j = add(j, 1)
+}
+
+println(sum)

@@ -1,0 +1,24 @@
+def x = 0
+while [x < 3] {
+  println(x)
+  x = add(x, 1)
+}
+
+if [x = 3] {
+  println("equal-ok")
+}
+if [x > 2] {
+  println("greater-ok")
+}
+if [x < 5] {
+  println("less-ok")
+}
+if [1 & 1] {
+  println("and-ok")
+}
+if [1 | 0] {
+  println("or-ok")
+}
+if ![0] {
+  println("not-ok")
+}

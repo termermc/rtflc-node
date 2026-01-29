@@ -1,0 +1,5 @@
+def x = 0
+while [x < 3] {
+  println(x)
+  x = add(x, 1)
+}

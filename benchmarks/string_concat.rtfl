@@ -1,0 +1,13 @@
+// Build a long string using concat and report its length.
+
+def n = 50000
+
+def i = 0
+
+def s = ""
+while [i < n] {
+  s = concat(s, "a")
+  i = add(i, 1)
+}
+
+println(string_length(s))

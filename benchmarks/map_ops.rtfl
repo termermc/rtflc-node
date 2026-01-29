@@ -1,0 +1,23 @@
+// Insert into a map and read values back to sum.
+
+def n = 20000
+
+def mp = map()
+
+def i = 0
+while [i < n] {
+  local key = concat("key", to_string(i))
+  map_put(mp, key, i)
+  i = add(i, 1)
+}
+
+def sum = 0
+
+def j = 0
+while [j < n] {
+  local key = concat("key", to_string(j))
+  sum = add(sum, map_get(mp, key))
+  j = add(j, 1)
+}
+
+println(sum)

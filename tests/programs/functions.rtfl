@@ -1,0 +1,4 @@
+func double(n) {
+  return mul(n, 2)
+}
+println(double(5))

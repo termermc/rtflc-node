@@ -1,0 +1,13 @@
+// Sum numbers from 0..n-1 using simple arithmetic in a loop.
+
+def n = 500000
+
+def i = 0
+def sum = 0
+
+while [i < n] {
+  sum = add(sum, i)
+  i = add(i, 1)
+}
+
+println(sum)

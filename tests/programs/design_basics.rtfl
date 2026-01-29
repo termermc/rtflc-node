@@ -1,0 +1,74 @@
+// Basic definitions and assignments
+
+def a = 1
+a = add(a, 2)
+println(a)
+
+def tempv = 5
+undef tempv
+error err_undef {
+  println(tempv)
+}
+if ![err_undef = "ok"] {
+  println("undef-ok")
+}
+
+// null/undefined/void handling
+
+def b = undefined
+if [b = null] {
+  println("null-ok")
+}
+
+def c = void
+if [c = null] {
+  println("void-ok")
+}
+
+def flag = true
+if flag {
+  println("flag-ok")
+}
+
+// Functions, arguments, return values
+
+func sum_two(x, y) {
+  return add(x, y)
+}
+println(sum_two(2, 5))
+
+func arg_test {
+  return add(arg1, arglen)
+}
+println(arg_test(4, 9, 10))
+
+// Local scoping
+
+func local_test {
+  local val = 5
+  return val
+}
+println(local_test())
+
+error err {
+  println(val)
+}
+if ![err = "ok"] {
+  println("scope-ok")
+}
+
+// unfunc behavior
+
+func temp {
+  println("temp")
+}
+
+temp()
+
+unfunc temp
+error err2 {
+  temp()
+}
+if ![err2 = "ok"] {
+  println("unfunc-ok")
+}
