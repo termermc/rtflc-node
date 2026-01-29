@@ -63,28 +63,28 @@ All times are in milliseconds.
 
 ### [arith_loop.rtfl](benchmarks/arith_loop.rtfl)
 
-Java: 225.37
-Node: 432.99
+ - Java: 225.37
+ - Node: 432.99
 
 ### [array_ops.rtfl](benchmarks/array_ops.rtfl)
 
-Java: 144.66
-Node: 159.06
+ - Java: 144.66
+ - Node: 159.06
 
 ### [function_calls.rtfl](benchmarks/function_calls.rtfl)
 
-Java: 361.62
-Node: 472.33
+ - Java: 361.62
+ - Node: 472.33
 
 ### [map_ops.rtfl](benchmarks/map_ops.rtfl)
 
-Java: 216.34
-Node: 157.58
+ - Java: 216.34
+ - Node: 157.58
 
 ### [string_concat.rtfl](benchmarks/string_concat.rtfl)
 
-Java: 494.62
-Node: 87.54
+ - Java: 494.62
+ - Node: 87.54
 
 ---
 
